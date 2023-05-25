@@ -8,13 +8,13 @@
             <div class='container info-container'>
                 <div class='info-text'>
                     <h1>
-                        <p class='animate-text-1'>Lorem ipsum dolor sit1,</p>
-                        <p class='text-2'>Lorem ipsum dolor sit amet2.</p>
+                        <p class='animate-text-1'>Lorem ipsum dolor sit,</p>
+                        <p class='text-2'>Lorem ipsum dolor sit amet.</p>
                     </h1>
                 </div>
                 <h2 class='subtitle'>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto aut, cupiditate dolores
-                    ducimus expedita labore nemo odio quibusdam quidem sapiente soluta3.
+                    ducimus expedita labore nemo odio quibusdam quidem sapiente soluta.
                 </h2>
                 <div style='color:black' class='scroll-button animate-scroll' tabindex='0'>
                     <a href='/about'>Click Here</a>
