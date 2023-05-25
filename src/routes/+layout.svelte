@@ -3,9 +3,10 @@
       <a href="/" class="nav-logo" title="Back to Homepage">Имя Фамилия</a>
       <div class="nav-links">
         
-        {#each nav as link}
+        <!-- svelte-ignore missing-declaration -->
+        {#if link.isShow}
         <a href={link.href} class="link">{link.title}</a>
-        {/each}        
+        {/if}        
       </div>
     </div>
     
@@ -15,6 +16,8 @@
     <slot></slot>
   </div>
 <script>
+// @ts-nocheck
+
     const nav = [
   {
     title: 'Обо мне',
