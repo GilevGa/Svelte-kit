@@ -1,73 +1,49 @@
-    <svelte:head>
-    <title>Имя Фамилия</title>
-    </svelte:head>
-    
-    <div class='container'>
-        <div class='info'>
-            <div class='animate-background'>
-                <div class='container info-container'>
-                    <div class='info-text'>
-                        <h1>
-                            <p class='animate-text-1'>Lorem ipsum dolor sit,</p>
-                            <p class='text-2'>Lorem ipsum dolor sit amet.</p>
-                        </h1>
-                    </div>
-    
-                    <h2 class='subtitle'>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto aut, cupiditate dolores
-                        ducimus expedita labore nemo odio quibusdam quidem sapiente soluta.
-                    </h2>
-                    <div style='color:black' class='scroll-button animate-scroll' tabindex='0'>
-                        <a href='/about'>Click Here</a>
-                        <div class='arrow'>→</div>
-                    </div>
+<svelte:head>
+<title>Имя Фамилия</title>
+</svelte:head>
+
+<div class='container'>
+    <div class='info'>
+        <div class='animate-background'>
+            <div class='container info-container'>
+                <div class='info-text'>
+                    <h1>
+                        <p class='animate-text-1'>Lorem ipsum dolor sit,</p>
+                        <p class='text-2'>Lorem ipsum dolor sit amet.</p>
+                    </h1>
+                </div>
+                <h2 class='subtitle'>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto aut, cupiditate dolores
+                    ducimus expedita labore nemo odio quibusdam quidem sapiente soluta.
+                </h2>
+                <div style='color:black' class='scroll-button animate-scroll' tabindex='0'>
+                    <a href='/about'>Click Here</a>
+                    <div class='arrow'>→</div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <nav>
-        <div class="nav-container">
-          <a href="/" class="nav-logo" title="Back to Homepage">Имя Фамилия</a>
-          <div class="nav-links">
-            <a href="/about" class="link">Обо мне</a>
-            <a href="/blog" class="link">Блог</a>
-            <a href="/projects" class="link">Портфолио</a>
-            <a href="/contact" class="link">Контакты</a>
-          </div>
-        </div>
-      </nav>
-      <div class="container">
-        <!-- Pages will be injected below -->
-        <slot></slot>
-      </div>
-      
-      <style>
-        .container {
-          max-width: 1400px;
-          margin: 50px auto;
-        }
-      </style>
-    
-    <div class='background-div'></div>
-    <style>
-        .info {
-            text-align: center;
-            position: relative;
-        }
-        .info-container {
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: left;
-            align-items: start;
-        }
-        .container {
-            max-width: 1400px;
-            margin: 190px 0 0 2.5rem;
-        }
-        .info h1 {
+<div class='background-div'></div>
+<style>
+    .info {
+        text-align: center;
+        position: relative;
+    }
+    .info-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        align-items: start;
+    }
+    .container {
+        max-width: 1400px;
+        margin: 190px 0 0 2.5rem;
+    }
+    .info h1 {
         font-size: 4rem;
         margin: 0;
     }
@@ -104,4 +80,4 @@
     .scroll-button .arrow {
         margin-left: 0.50rem;
     }
-    </style>
+</style>
