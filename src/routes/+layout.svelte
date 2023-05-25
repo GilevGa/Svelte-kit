@@ -8,12 +8,13 @@
         {/each}        
       </div>
     </div>
-  </nav>
+    
+</nav>
   <div class="container">
     <!-- Pages will be injected below -->
     <slot></slot>
   </div>
-  <script>
+<script>
     const nav = [
     {
       title: 'Обо мне',
