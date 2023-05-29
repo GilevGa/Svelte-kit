@@ -1,13 +1,31 @@
 <main>
+  <h1>My to-do list</h1>
+
   <form on:submit|preventDefault={add}>
     <input bind:value={newItem} placeholder="Enter to-do" />
     <button class="add-todo" on:click={add}>
       <span>+</span>
     </button>
+    <div class="todos">
+      {#each todoList as item, index}
+        <span class="todo__text">{item.task}</span>
+        <div class="todo__buttons">
+          <button class="complete" on:click={() => complete(index)}>
+            <Icon name="check-mark" />
+          </button>
+          <button class="delete" on:click={() => remove(index)}>
+            <Icon name="delete" />
+          </button>
+  </div>
+      {/each}
+  </div>
+  
   </form>
   
 </main>
 <script>
+    import Icon from "../../../../components/Icon.svelte";
+
   let newItem = '';
 
 /**
@@ -27,6 +45,22 @@ function add() {
   }
 }
 
+
+
+    /**
+     * @param {number} index
+     */
+    function remove(index) {
+        throw new Error("Function not implemented.");
+    }
+
+
+    /**
+     * @param {number} index
+     */
+    function complete(index) {
+        throw new Error("Function not implemented.");
+    }
 </script>
 <style>
   main {
