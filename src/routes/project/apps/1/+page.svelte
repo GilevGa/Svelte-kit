@@ -28,10 +28,17 @@
 </main>
 
 <script>
+<<<<<<< HEAD
 // @ts-nocheck
 
   import Icon from '../../../../components/Icon.svelte';
   let newItem = "";
+=======
+    let newItem = '';
+/**
+     * @type {any[]}
+     */
+>>>>>>> eaad6c5dfd6d1e36ff6c5bf7e8cb3ede6525bee0
 let todoList = [];
 function add() {
   if (newItem !== "") {
@@ -53,7 +60,50 @@ function complete(index) {
   todoList[index].completed = !todoList[index].completed;
 }
 
+import Icon from '../../../../components/Icon.svelte'
+/**
+     * @param {number} index
+     */
+function remove(index) {
+  todoList.splice(index, 1);
+  todoList = todoList;
+}
+/**
+     * @param {number} index
+     */
+function complete(index) {
+  todoList[index].completed = !todoList[index].completed;
+}
+
 </script>
+<<<<<<< HEAD
+=======
+<main>
+    <h1>My to-do list</h1>
+
+    <form on:submit|preventDefault={add}>
+        <input bind:value={newItem} placeholder="Enter to-do" />
+        <button class="add-todo" on:click={add}><span>+</span></button>
+      
+      <div class="todos">
+        {#each todoList as item, index}
+            <span class="todo__text">{item.task}</span>
+            <div class="todo__buttons">
+                <button class="complete" on:click={() => complete(index)}>
+                  <Icon name="check-mark" />
+                </button>
+                <button class="delete" on:click={() => remove(index)}>
+                  <Icon name="delete" />
+                </button>
+        </div>
+        
+        {/each}
+    </div>
+    </form>
+    
+      
+</main>
+>>>>>>> eaad6c5dfd6d1e36ff6c5bf7e8cb3ede6525bee0
 <style>
   main {
   display: flex;
@@ -110,6 +160,42 @@ input {
   margin: 0;
   flex-shrink: 0;
 }
+<<<<<<< HEAD
+=======
+
+h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 2em 0;
+}
+button {
+  background-color: transparent;
+  border: none;
+}
+
+button.delete,
+button.delete:hover {
+  color: brown;
+  transition: color 100ms ease-out;
+}
+button.complete,
+button.complete:hover {
+  color: cadetblue;
+  transition: color 100ms ease-out;
+}
+.todo.completed {
+  color: slategray;
+}
+
+.todo.completed .todo__text {
+  text-decoration: line-through;
+}
+
+.todo.completed button {
+  color: silver;
+}
+
+>>>>>>> eaad6c5dfd6d1e36ff6c5bf7e8cb3ede6525bee0
 
 h1 {
   text-align: center;
