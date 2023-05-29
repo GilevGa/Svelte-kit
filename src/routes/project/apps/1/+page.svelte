@@ -32,7 +32,7 @@
 // @ts-nocheck
 
   import Icon from '../../../../components/Icon.svelte';
-  let newItem = "";
+  
 =======
     let newItem = '';
 /**
