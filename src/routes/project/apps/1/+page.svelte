@@ -28,9 +28,7 @@
 
   let newItem = '';
 
-/**
-     * @type {any[]}
-     */
+
 let todoList = [];
 function add() {
   if (newItem !== '') {
@@ -47,17 +45,13 @@ function add() {
 
 
 
-    /**
-     * @param {number} index
-     */
+
     function remove(index) {
         throw new Error("Function not implemented.");
     }
 
 
-    /**
-     * @param {number} index
-     */
+
     function complete(index) {
         throw new Error("Function not implemented.");
     }
