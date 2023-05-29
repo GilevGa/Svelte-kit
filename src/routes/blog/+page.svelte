@@ -7,7 +7,7 @@
     <!-- svelte-ignore missing-declaration -->
     {#each routes as page}
       <div class='post'>
-        <h>{page.title}</h2>
+        <h2>{page.title}</h2>
         <p>{page.body}</p>
         <p class='readmore'>
           <a class='link' href={`/blog/posts/${page.id}`}>
