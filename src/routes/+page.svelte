@@ -1,5 +1,5 @@
 <svelte:head>
-<title>Главная</title>
+<title>Инженерия.RU</title>
 </svelte:head>
 
 <div class='container'>
@@ -8,17 +8,16 @@
             <div class='container info-container'>
                 <div class='info-text'>
                     <h1>
-                        <p class='animate-text-1'>Lorem ipsum dolor sit,</p>
-                        <p class='text-2'>Lorem ipsum dolor sit amet.</p>
+                        <p class='animate-text-1'>Сайт будущих инженеров,</p>
+                        <p class='text-2'>Константина, Никиты и Павла</p>
                     </h1>
                 </div>
                 <h2 class='subtitle'>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto aut, cupiditate dolores
-                    ducimus expedita labore nemo odio quibusdam quidem sapiente soluta.
+                    Только здесь вы увидете наши блоги и историю. Этот сайт создан для аудитории, которые стремятся познать инженерию в дальнейшем, также скорым временем будет создан форум, где пользователи смогут задать любой вопрос связанный с сложной инженерией.
                 </h2>
                 <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
                 <div style='color:black' class='scroll-button animate-scroll' tabindex='0'>
-                    <a href='/about'>Click Here</a>
+                    <a href='/about'>Узнать о нас</a>
                     <div class='arrow'>→</div>
                 </div>
             </div>
